@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/style.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+    </style>
+
+    <title>FORMULÁRIO</title>
+
+</head>
+<body>
+    <div>
+       <h1 id="titulo">Cadastro do Turísta </h1>
+       
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <legend>Dados Pessoais</legend>
+            <div class="nome">
+                <label for="nome">Nome:</label>
+                <input type="text" nome= "nome" id="nome" required >
+            </div>
+
+            <div class="data">
+                <label for="data">Data de Nascimento:</label>
+                <input type= "date" nome=data id="data" required>
+            </div>
+
+            <div class="pais">
+                <label for="tel">País:</label>
+                <input type= "text" nome=pais id="pais" required>
+            </div>
+
+            <div class="tel">
+                <label for="tel">Telefone:</label>
+                <input type= "tel" nome=tel id="tel" required>
+            </div>
+           
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" nome="email" id="email" required>
+            </div>
+
+            <div class="simounao">
+                <label><strong>Maior de 18 anos?</strong></label>
+                    <section class="power-button">
+                    <input type="checkbox" id="powerbutton">
+                    <label for="powerbutton" class="toggle"></label>
+                </section>
+                              
+            </div>
+
+        </fieldset>
+        
+        <div class="campo">
+            <label class="motivo">Motivo da Viagem:</label>
+            <select id="motivo">
+                <option selected disabled value="">Selecione</option>
+                <option>Negócios</option>
+                <option>Estudo</option>
+                <option>Turísmo</option>
+                <option>Outros</option>
+            </select>
+        </div>
+        
+        <fieldset class="grupo">
+            <legend>Áreas de interesse</legend>
+            <span id="campo">
+                
+                <input type="checkbox" id="opção1" nome= opção1 value="Artes Plásticas">
+                <label for="opção1">Artes Plásticas</label>
+                
+                <input type="checkbox" id="opção2" nome= opção2 value="Música">
+                <label for="opção2">Música</label>
+                
+                <input type="checkbox" id="opção3" nome= opção3 value= "Literatura">
+                <label for="opção3">Literatura</label>
+                
+                <input type="checkbox" id="opção4" nome= opção4 value="Negócios">
+                <label for="opção4">Negócios</label>
+                
+                <input type="checkbox" id="opção5" nome= opção5 value="cultura">
+                <label for="opção5">Cultura</label>
+                
+                <input type="checkbox" id="opção6" nome= opção6 value="gastronomia">
+                <label for="opção6">Gastronomia</label>
+
+            </span>
+        </fieldset>
+        
+        <div class="campo">
+            <label class="comentarios" for="comentarios">Comentário:</label>
+            <textarea rows="6" style="width: 26em" id="comentarios" name="comentarios"></textarea>
+        </div>
+        <div  class='botao'>
+            <button id="botao1" type="submit">Enviar</button>
+            <button id="botao2" type="reset">Apagar</button>
+        </div>
+    
+    </form>
+
+</body>
+</html>
+
+<!-- Gabrielle Araujo 
+Washington Conceição -->
